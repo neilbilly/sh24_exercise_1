@@ -6,7 +6,6 @@ Search for a github account using a web form.
 
 Alternatively browse directly via a valid url, for example:
 
-For example:
 ```
   /github_accounts/neilbilly
 ```
