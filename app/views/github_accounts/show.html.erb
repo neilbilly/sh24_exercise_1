@@ -1,14 +1,14 @@
 <p>
   <% if @account.present? %>
     <% if @account.user_info.present? %>
-      <h1>Language Summary for <%= @account.user_info.login %>:</h1> 
+      <h1>Language Summary for <%= @account.user_info.login %>:</h1>
       <div id="language_info">
         <% @account.repo_language_counts.each do |l| %>
           <p>
             <% if l[0].present? %>
               <%= l[1] %> repo(s) using mainly <%= l[0] %>
             <% else %>
-              <%= l[1] %> repo(s) using mainly an unknown language %>
+              <%= l[1] %> repo(s) using mainly an unknown language
             <% end %>
           </p>
         <% end %>
