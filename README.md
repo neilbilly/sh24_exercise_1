@@ -24,4 +24,8 @@ BDD using RSpec and Capybara
 
 ### Github rate limits.
 
-This system is restricted to a small number of queries by Github ([more info...](https://developer.github.com/v3/#rate-limiting))
+This system is restricted to a small number of queries by Github ([more info...](https://developer.github.com/v3/#rate-limiting)).
+
+### Demo
+
+Checkout the [demo on Heroku](http://secure-beach-6110.herokuapp.com).
