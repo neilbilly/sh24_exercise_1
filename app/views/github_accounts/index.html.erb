@@ -1,0 +1,8 @@
+<h1>GitHub Account Lookup</h1>
+<%= form_tag github_accounts_path, :method => 'get' do %>
+	<div>
+		<%= text_field_tag :query, params[:query] %>
+		<%= submit_tag "Search", :name => nil %>
+	</div>
+	<br/>
+<% end %>

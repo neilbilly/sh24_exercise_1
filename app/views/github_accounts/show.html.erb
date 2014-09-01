@@ -1,0 +1,29 @@
+<p>
+  <% if @account.present? %>
+    <% if @account.user_info.present? %>
+      <h1>Language Summary for <%= @account.user_info.login %>:</h1> 
+      <div id="language_info">
+        <% @account.repo_language_counts.each do |l| %>
+          <p>
+            <% if l[0].present? %>
+              <%= l[1] %> repo(s) using mainly <%= l[0] %>
+            <% else %>
+              <%= l[1] %> repo(s) using mainly an unknown language %>
+            <% end %>
+          </p>
+        <% end %>
+      </div>
+      <div id="language_most_common">
+        <p>
+          <% if @account.repo_language_counts[0][0].present? %>
+            Maybe <%= @account.repo_language_counts[0][0] %> is their favorite language?
+          <% else %>
+            Maybe an unknown language is their favorite?
+          <% end %>
+        </p>
+      </div>
+    <% end %>
+  <% end %>
+</p>
+<br/>
+<%= link_to 'Try another', github_accounts_path %>
