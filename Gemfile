@@ -45,3 +45,5 @@ group :test, :development do
 end
 
 gem "octokit", "~> 3.0"
+
+gem 'rails_12factor', group: :production
